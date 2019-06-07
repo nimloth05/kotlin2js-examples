@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+*.out
+*.bak
+*.log
+*.aux
+*.nav
+*.snm
+*.gz
+*.toc
+buildSrc/.gradle
+*.tex~
+*.un~
