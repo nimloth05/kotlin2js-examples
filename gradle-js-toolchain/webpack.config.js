@@ -16,10 +16,10 @@ module.exports = {
     },
     devtool: 'inline-source-map',
     resolve: {
-        "modeles": [
+        "modules": [
             outputMin,
             "node_modules"
-        ],
+        ]
     },
     plugins: [
     ]

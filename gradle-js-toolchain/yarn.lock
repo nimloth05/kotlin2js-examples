@@ -2644,6 +2644,14 @@ karma-commonjs@^1.0.0:
   resolved "https://registry.yarnpkg.com/karma-commonjs/-/karma-commonjs-1.0.0.tgz#8681d5d7d606628c5f00a36e6aef3cf943c6b0a9"
   integrity sha1-hoHV19YGYoxfAKNuau88+UPGsKk=
 
+karma-junit-reporter@*:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/karma-junit-reporter/-/karma-junit-reporter-1.2.0.tgz#4f9c40cedfb1a395f8aef876abf96189917c6396"
+  integrity sha1-T5xAzt+xo5X4rvh2q/lhiZF8Y5Y=
+  dependencies:
+    path-is-absolute "^1.0.0"
+    xmlbuilder "8.2.2"
+
 karma-mocha-reporter@^2.2.4:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/karma-mocha-reporter/-/karma-mocha-reporter-2.2.5.tgz#15120095e8ed819186e47a0b012f3cd741895560"
@@ -2667,6 +2675,20 @@ karma-phantomjs-launcher@^1.0.4:
   dependencies:
     lodash "^4.0.1"
     phantomjs-prebuilt "^2.1.7"
+
+karma-qunit@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/karma-qunit/-/karma-qunit-1.2.1.tgz#88252afd2127bc03b0cc31978ed6882b139f470a"
+  integrity sha1-iCUq/SEnvAOwzDGXjtaIKxOfRwo=
+
+karma-webpack@5.0.0-alpha.3.0:
+  version "5.0.0-alpha.3.0"
+  resolved "https://registry.yarnpkg.com/karma-webpack/-/karma-webpack-5.0.0-alpha.3.0.tgz#896817100d4ab917e3e3035cb735de8471aab865"
+  integrity sha512-ID2xYs8CnvPPbOCdj/ridr0w9l0vmuZem7hJP7yEXVQ94KhFG++IrTH1qj+EUO4ymll3ECLCw6N+nQIY/Nvj1w==
+  dependencies:
+    glob "^7.1.3"
+    minimatch "^3.0.4"
+    webpack-merge "^4.1.5"
 
 karma@^1.7.1:
   version "1.7.1"
@@ -2741,6 +2763,18 @@ klaw@^1.0.0:
   integrity sha1-QIhDO0azsbolnXh4XY6W9zugJDk=
   optionalDependencies:
     graceful-fs "^4.1.9"
+
+kotlin-test@1.3.31:
+  version "1.3.31"
+  resolved "https://registry.yarnpkg.com/kotlin-test/-/kotlin-test-1.3.31.tgz#d0993070d0bf739523acfdc35de0760339d38150"
+  integrity sha512-/6mA1JumUd9HZQXoSVmXJz0dcRe0/ure2MHAVx25AXrUS/E2/tA9eAz6PbF/PwLsKMjFSl9Y16RhzziUJlcqvQ==
+  dependencies:
+    kotlin "1.3.31"
+
+kotlin@1.3.31:
+  version "1.3.31"
+  resolved "https://registry.yarnpkg.com/kotlin/-/kotlin-1.3.31.tgz#33d087d51bce625a59299f529ee91b5e9075aed6"
+  integrity sha512-rbA6yS8kHSLhgCNP9zJKtTUC2almdzzkVmzhxqH+P38af1JomfdWlHMaJ5Jh1tPnb136dPPY0z1fmhluYqEdWg==
 
 lcid@^2.0.0:
   version "2.0.0"
@@ -2832,7 +2866,7 @@ lodash@^3.8.0:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
   integrity sha1-W/Rejkm6QYnhfUgnid/RW9FAt7Y=
 
-lodash@^4.0.1, lodash@^4.17.11, lodash@^4.5.0:
+lodash@^4.0.1, lodash@^4.17.11, lodash@^4.17.5, lodash@^4.5.0:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
@@ -3818,6 +3852,11 @@ querystringify@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.1.1.tgz#60e5a5fd64a7f8bfa4d2ab2ed6fdf4c85bad154e"
   integrity sha512-w7fLxIRCRT7U8Qu53jQnJyPkYZIaR4n5151KMfcJlO/A9397Wxb1amJvROTK6TOnp7PfoAmg/qXiNHI+08jRfA==
+
+qunitjs@1.23.1:
+  version "1.23.1"
+  resolved "https://registry.yarnpkg.com/qunitjs/-/qunitjs-1.23.1.tgz#1971cf97ac9be01a64d2315508d2e48e6fd4e719"
+  integrity sha1-GXHPl6yb4Bpk0jFVCNLkjm/U5xk=
 
 randomatic@^3.0.0:
   version "3.1.1"
@@ -4947,6 +4986,13 @@ webpack-log@^2.0.0:
     ansi-colors "^3.0.0"
     uuid "^3.3.2"
 
+webpack-merge@^4.1.5:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-4.2.1.tgz#5e923cf802ea2ace4fd5af1d3247368a633489b4"
+  integrity sha512-4p8WQyS98bUJcCvFMbdGZyZmsKuWjWVnVHnAS3FFg0HDaRVrPbkivx2RYCre8UiemD67RsiFFLfn4JhLAin8Vw==
+  dependencies:
+    lodash "^4.17.5"
+
 webpack-sources@^1.1.0, webpack-sources@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-1.3.0.tgz#2a28dcb9f1f45fe960d8f1493252b5ee6530fa85"
@@ -5054,6 +5100,11 @@ wtf-8@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/wtf-8/-/wtf-8-1.0.0.tgz#392d8ba2d0f1c34d1ee2d630f15d0efb68e1048a"
   integrity sha1-OS2LotDxw00e4tYw8V0O+2jhBIo=
+
+xmlbuilder@8.2.2:
+  version "8.2.2"
+  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-8.2.2.tgz#69248673410b4ba42e1a6136551d2922335aa773"
+  integrity sha1-aSSGc0ELS6QuGmE2VR0pIjNap3M=
 
 xmlhttprequest-ssl@1.5.3:
   version "1.5.3"

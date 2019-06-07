@@ -1,14 +1,12 @@
 module.exports = function (config) {
     config.set({
-            frameworks: ['mocha', 'commonjs'],
-            reporters: ['mocha'],
+            frameworks: ["mocha"],
+            reporters: ["mocha"],
             files: [
-                'build/classes/kotlin/main/*.js',
-                'build/classes/kotlin/test/*.js',
-                'node_modules/*.js'
+                {pattern: 'build/classes/kotlin/test/*_test.js', watched: false}
             ],
             exclude: [],
-            colors: true,
+            colors: false,
             autoWatch: false,
             browsers: [
                 'PhantomJS'
@@ -17,8 +15,20 @@ module.exports = function (config) {
             singleRun: true,
 
             preprocessors: {
-                '**/*.js': ['commonjs']
+                'build/classes/kotlin/test/*_test.js': ['webpack']
+            },
+
+            webpack: {
+                mode: "development",
+                resolve: {
+                    "modules": [
+                        "build/kotlin-js-min/main/",
+                        "node_modules"
+                    ]
+                }
             }
+
+
         }
     )
 };

@@ -1,5 +1,6 @@
 import ch.viseon.Versions
 import com.moowork.gradle.node.yarn.YarnTask
+import org.jetbrains.kotlin.gradle.dsl.KotlinJsDce
 import org.jetbrains.kotlin.gradle.tasks.Kotlin2JsCompile
 
 plugins {
@@ -29,6 +30,12 @@ tasks {
     }
   }
 
+  "runDceTestKotlinJs"(KotlinJsDce::class) {
+    dceOptions {
+      devMode = true
+    }
+  }
+
   register<Copy>("populateNodeModules") {
     dependsOn(compileTestKotlin2Js)
 
@@ -51,7 +58,7 @@ tasks {
   }
 
   register<YarnTask>("runKarma") {
-    dependsOn("yarnInstall", "populateNodeModules")
+    dependsOn("yarnInstall")
     args = setOf("test")
   }
 
