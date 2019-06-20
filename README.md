@@ -18,7 +18,7 @@ Build: Frontend plugin
 Demonstrates calling kotlin code from javascript.
 Build: Gradle, kotlin2js, DCE
 
-#mpp-example
+# mpp-example
 Example Toolchain for building a simple (without frontend plugin) MPP app for testing.
 
 # gradle-js-toolchain
@@ -26,9 +26,14 @@ Example Toolchain for building a simple (without frontend plugin) MPP app for te
 Project exists only to demonstrate alternate build chain.
 Build: Uses node Plugin, yarn and mocha for testing.
 
-#node-toolchain
+# node-toolchain
 
 Project shows how to include kotlin into an existing js application.
 HINT: build.gradle.kts exists only to include the module into the workspace.
 Build: Node tooling with kotlin-webpack-plugin. DCE is performed with compiler options "optimize:true" (only for lib code)
+
+# new-gradle-plugin
+
+Added an example for the new 1.3.40 plugin. Run seems to work, tests are compilled but not executed.(?)
+execute: ./gradlew :new-gradle-plugin:run -t (-t continuous build - very good performance boost)
 
