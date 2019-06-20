@@ -36,6 +36,8 @@ include(
     "js-to-kotlin",
     "mpp-example",
     "node-toolchain",
-    "gradle-js-toolchain")
+    "gradle-js-toolchain",
+    "new-gradle-plugin"
+)
 
 
